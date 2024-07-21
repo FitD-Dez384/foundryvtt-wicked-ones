@@ -199,7 +199,7 @@ export class WickedHelpers {
   static getAttributeLabel(attribute_name) {
     // Calculate Dice to throw.
     let attribute_labels = {};
-    const attributes = game.system.model.Actor.character.attributes;
+    const attributes = game.model.Actor.character.attributes;
 
     for (var attibute_name in attributes) {
       attribute_labels[attibute_name] = attributes[attibute_name].label;
